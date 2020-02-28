@@ -1,0 +1,72 @@
+action:                           test_multiple                                           # the action performed
+tensorboardX_path:                ./data/encoder_decoder_runs                             # path to the tensorboardX logs
+style_images_path:                ./../data/testset_style                                 # path to the content testset
+content_images_path:              ./../data/testset_content                               # path to the style testset
+loader:                           no_norm                                                 # loader, one of (std, no_norm)
+unloader:                         none                                                    # un-loader, one of (std, saving, no_norm, none)
+imsize:                           512                                                     # size of the image in pixels 
+lambda_1:                         25                                                      # lambda_1 of the loss
+lambda_2:                         1                                                       # lambda_2 of the loss
+lambda_tv:                        0.000001                                                # lambda_tv of the loss
+
+# # comparison autoencoders without TV loss
+# image_saving_path:                ./data/result_images_big_without_TV
+
+# encoder_model_path_list:          [
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/encoder_0_1.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/encoder_1_1.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/encoder_1_10.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/encoder_1_15.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/encoder_1_20.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/encoder_1_25.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/encoder_1_50.pth,
+#                                   ]
+
+# decoder_model_path_list:          [
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/decoder_0_1.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/decoder_1_1.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/decoder_1_10.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/decoder_1_15.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/decoder_1_20.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/decoder_1_25.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/decoder_1_50.pth,
+#                                   ]
+
+# # comparison autoencoders with TV loss (1:15)
+# image_saving_path:                ./data/result_images_big_15_TV
+
+# encoder_model_path_list:          [
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/encoder_1_15.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/encoder_1_15_6.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/encoder_1_15_5.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/encoder_1_15_4.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/encoder_1_15_3.pth,
+#                                   ]
+
+# decoder_model_path_list:          [
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/decoder_1_15.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/decoder_1_15_6.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/decoder_1_15_5.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/decoder_1_15_4.pth,
+#                                     /Users/Johannes/Desktop/encoder_decoder_exp/decoder_1_15_3.pth,
+#                                   ]
+
+# comparison autoencoders with TV loss (1:25)
+
+image_saving_path:                ./data/result_images_big_25_TV
+
+encoder_model_path_list:          [
+                                    # ./models/encoder_1_25_state_dict.pth,
+                                    ./models/encoder_1_25_6_state_dict.pth,
+                                    ./models/encoder_1_25_5_state_dict.pth,
+                                    # ./models/encoder_1_25_4_state_dict.pth,
+                                    # ./models/encoder_1_25_3_state_dict.pth,
+                                  ]
+
+decoder_model_path_list:          [
+                                    # ./models/decoder_1_25_state_dict.pth,
+                                    ./models/decoder_1_25_6_state_dict.pth,
+                                    ./models/decoder_1_25_5_state_dict.pth,
+                                    # ./models/decoder_1_25_4_state_dict.pth,
+                                    # ./models/decoder_1_25_3_state_dict.pth,
+                                  ]

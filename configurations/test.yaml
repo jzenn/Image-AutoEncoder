@@ -1,0 +1,13 @@
+action:                           test                                                    # the action performed
+encoder_model_path:               ./models/encoder_1_25_6_state_dict.pth                  # path to the pre-trained encoder model
+decoder_model_path:               ./models/decoder_1_25_6_state_dict.pth                  # path to the pre-trained decoder model
+tensorboardX_path:                ./data/encoder_decoder_runs                             # path to the tensorboardX logs
+style_images_path:                ./../data/testset_style                                 # path to the content testset
+content_images_path:              ./../data/testset_content                               # path to the style testset
+image_saving_path:                ./data/test_images                                      # saving path for test images
+loader:                           no_norm                                                 # loader, one of (std, no_norm)
+unloader:                         none                                                    # un-loader, one of (std, saving, no_norm, none)
+imsize:                           512                                                     # size of the image in pixels 
+lambda_1:                         25                                                      # lambda_1 of the loss
+lambda_2:                         1                                                       # lambda_2 of the loss
+lambda_tv:                        0.000001                                                # lambda_tv of the loss

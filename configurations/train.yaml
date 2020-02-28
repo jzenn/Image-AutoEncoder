@@ -1,0 +1,24 @@
+action:                           train                                                   # the action performed
+coco_data_path:                   ./../data/cocodataset/train2017                         # path to the MS-COCO dataset images
+painter_by_numbers_data_path:     ./../data/painter-by-numbers/train                      # path to the painter-by-numbers images
+model_saving_path:                ./data/autoencoder_models                               # saving path for models
+image_saving_path:                ./data/autoencoder_images                               # saving path for images
+use_pretrained_model:             false                                                   # should a pre-trained model be used
+pretrained_model_path:            ./data/autoencoder_models                               # path to the pre-trained model
+encoder_model_path:               './models/encoder_1_25_6_state_dict.pth'                # path to the pre-trained encoder model
+encoder_saving_path:              ./data/autoencoder_models                               # path for encoder-model saving
+decoder_saving_path:              ./data/autoencoder_models                               # path for decoder-model saving
+tensorboardX_path:                ./data/autoencoder_runs                                 # path to the tensorboardX logs
+loader:                           no_norm                                                 # loader, one of (std, no_norm)
+unloader:                         none                                                    # un-loader, one of (std, saving, no_norm, none)
+epochs:                           200                                                     # number of epochs the model is trained
+epoch_saving_interval:            1                                                       # every epoch_saving_interval (epochs) the model is saved
+step_printing_interval:           1000                                                    # every step_printing_interval (iterations) the loss is printed
+image_saving_interval:            1000                                                    # every image_saving_interval (iterations) some example images are saved
+batch_size:                       4                                                       # size of a batch the training is done in
+imsize:                           512                                                     # size of the image in pixels 
+lr:                               0.0001                                                  # learning rate
+lambda_1:                         25                                                      # lambda_1 of the loss 
+lambda_2:                         1                                                       # lambda_2 of the loss 
+lambda_tv:                        0.000001                                                # lambda_tv of the loss 
+train_encoder:                    false                                                   # should the encoder be trained or stay fixed during training
