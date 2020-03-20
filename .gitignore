@@ -16,6 +16,8 @@ data/
 *.toc
 *.bbl
 *.blg
+*.tex
+*.out
 
 # pycharm
 .idea
