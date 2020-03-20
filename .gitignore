@@ -1,0 +1,36 @@
+# mac
+*~
+.DS_Store
+*DS_Store
+
+# data
+data/
+
+# notebooks
+.ipynb*
+
+# tex
+*.aux
+*.log
+*.gz
+*.toc
+*.bbl
+*.blg
+
+# pycharm
+.idea
+venv
+
+# python
+__pycache__
+
+# singularity
+singularity-vm/*
+job*
+
+# models
+pytorch_models
+torchvision_models
+
+# tensorboardX
+runs
