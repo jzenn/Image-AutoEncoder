@@ -18,6 +18,7 @@ data/
 *.blg
 *.tex
 *.out
+*.bib
 
 # pycharm
 .idea
