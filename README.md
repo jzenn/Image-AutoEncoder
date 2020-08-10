@@ -47,4 +47,4 @@ autoencoder network makes up one chapter of the final thesis. A slightly modifie
 version of the chapter can be found in this repository as a pdf-file. Also, the chapter introduces
 all related formulas to this work. 
 
-The final thesis can be found  in a corrected and modified version. **(link here)**
+The final thesis can be found [here](https://jzenn.github.io/projects/bsc-thesis) in a corrected and modified version.
